@@ -1,0 +1,38 @@
+{
+  "name": "taskplanner",
+  "version": "1.0.0",
+  "description": "An application to stay on-top of the daily, monthly, and yearly routines!",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha test/unitTests --timeout 5000",
+    "testAll": "mocha test --recursive --timeout 5000",
+    "coverage": "nyc --reporter=html  npm run testAll",
+    "start": "nodemon server.js",
+    "dev": "nodemon --watch server server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-validator": "^6.14.3",
+    "jsonwebtoken": "^9.0.0",
+    "mailgen": "^2.0.27",
+    "mongoose": "^6.9.0",
+    "node-cron": "^3.0.2",
+    "nodemailer": "^6.9.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "chai-http": "^4.3.0",
+    "mocha": "^10.2.0",
+    "nodemon": "^2.0.20",
+    "nyc": "^15.1.0",
+    "sinon": "^15.0.1",
+    "sinon-chai": "^3.7.0"
+  }
+}
